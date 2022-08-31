@@ -1,0 +1,49 @@
+.navigation {
+ padding: 0em 0em;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ align-items: center;
+ margin: 0px 12em;
+
+
+  &__nav-links {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+
+
+    &__link {
+        color: #655446;
+        font-size: 1.2em;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        text-decoration: none;
+
+        &:hover{
+            color: #65544688;
+        }
+
+        
+
+    }
+}
+
+&__nav-logo{
+
+    &__img {
+        width: 15em;
+
+    }
+}
+}
+
+
+
+
+
+
+

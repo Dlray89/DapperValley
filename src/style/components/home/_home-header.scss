@@ -1,0 +1,239 @@
+@import '../base/variables.scss';
+@import '../base/animation.scss';
+.home {
+
+    &__home-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0px 0em;
+        background-image: url("../../../images/desktop/burger-bg.gif");
+        background-repeat: no-repeat;
+        background-size: 60%;
+        height: 30em;
+        background-position-x: 20em;
+        background-position-y: -4em;
+
+        &__social-media {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            margin:0em 12.5em ;
+            height: 13em;
+
+            &__logo-box {
+                
+                
+                text-align: center;
+
+                &:nth-child(1) {
+                    animation: bounce 1s both 1s;
+                }
+
+                &:nth-child(2) {
+                    animation: bounce 1s both 2s;
+                }
+
+                &:nth-child(3) {
+                    animation: bounce 1s both 3s;
+                }
+                
+
+                &--logo {
+                    width: 2em;
+
+               
+                    
+                }
+            }
+
+
+        }
+    }
+
+
+    &__title {
+        transform: rotate(90deg);
+        font-size: 2em;
+        text-transform: uppercase;
+        position: relative;
+        top: -4em;
+        left: 4.25em;
+        color: #B67429;
+        transform-origin: 0 0;
+        animation: $track-in-animation;
+        
+    }
+
+    &__subheader{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5em;
+
+        &__title {
+            font-size: 2em;
+            margin: 0.5em 0em;
+            color: #B67429;
+            font-weight: 700;
+        }
+
+        &__text{
+            width: 40%;
+            text-align: center;
+            margin: 0.5em 0em;
+        }
+
+        &__btn{
+            font-style: normal;
+            padding: 0.5em 0.5em;
+            width: 12%;
+            margin: 1em 0em;
+            border: none;
+            border: solid 1px #b6742954;
+            border-radius: 3px;
+            box-shadow: 4px 8px 8px 1px #B67429;
+            cursor: pointer;
+
+
+            &:hover {
+                background-color: #ffffff94;
+                color: #B67429;
+                border: solid 2px #ffffff94;
+            
+            }
+
+
+
+        }
+    }
+
+    &__menu-main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        margin: 10em 0em;
+
+
+
+        &__title-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 40%;
+
+            &__title {
+                font-size: 2em;
+                margin: 0.5em 0em;
+                color: #B67429;
+
+            }
+
+            &__text {
+                width: 70%;
+                text-align: center;
+                margin: 0.6em 0em;
+            }
+
+            &__btn {
+                font-style: normal;
+                padding: 0.5em 0.5em;
+                width: 22%;
+                margin: 1em 0em;
+                border: none;
+                border: solid 1px #b6742954;
+                border-radius: 3px;
+                box-shadow: 4px 8px 8px 1px #B67429;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #ffffff94;
+                    color: #B67429;
+                    border: solid 2px #ffffff94;
+                
+                }
+            }
+
+        }
+
+        &__img-box {
+            width: 30%;
+            &__img {
+                width: 100%;
+                border-radius: 50%;
+                box-shadow: 4px 4px 15px 4px #b674296e;
+
+            }
+        }
+    }
+
+    &__cta-img {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.774)), url("../../../images/desktop/resturant.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        height: 30em;
+        background-position-y: bottom;
+    
+
+    }
+
+    &__private-dining {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        margin: 5em 0em;
+
+        &__img-box {
+            width: 25%;
+            margin-left: 3em;
+
+            &__img {
+                width: 100%;
+                border-radius: 10%;
+            }
+        }
+
+        &__title-box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 25%;
+
+            &__title {
+                font-size: 2em;
+                margin: 0.5em 0em;
+                color: #B67429;
+            }
+
+            &__text {
+                text-align: center;
+                margin: 0.5em 0em;
+
+            }
+
+
+            &__btn {
+                font-style: normal;
+                padding: 0.5em 0.5em;
+                width: 35%;
+                margin: 1em 0em;
+                border: none;
+                border: solid 1px #b6742954;
+                border-radius: 3px;
+                box-shadow: 4px 8px 8px 1px #B67429;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: #ffffff94;
+                    color: #B67429;
+                    border: solid 2px #ffffff94;
+                
+                }
+            }
+        }
+    }
+}
