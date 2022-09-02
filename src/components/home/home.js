@@ -1,9 +1,13 @@
-import React from 'react'
-import CTAImg from './cta-img/cta-img'
-import HomeHeader from './home-header/HomeHeader'
-import MenuMain from './menu-card/menu-main'
-import PrivateDining from './private-dining/private-dining'
-import SubHeader from './sub-header-text/SubHeader'
+import React, { lazy } from 'react'
+
+
+
+
+const CTAImg = lazy(() => import('./cta-img/cta-img')) 
+const HomeHeader = lazy(() => import( './home-header/HomeHeader'))
+const MenuMain = lazy(() => import('./menu-card/menu-main')) 
+const PrivateDining = lazy(() => import('./private-dining/private-dining')) 
+const SubHeader = lazy(() => import( './sub-header-text/SubHeader'))
 
 
 
