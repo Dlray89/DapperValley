@@ -23,7 +23,7 @@ const ReservationForm = ({name, setName, email, setEmail, phone, setPhone, numOf
                     <h3 className='home__cta-img__reservations__form__title'>Reservation</h3>
                     <p className='home__cta-img__reservations__form__text'>Pull up a chair and stay a while!  We’re excited to offer both indoor and outdoor seating weather permitting. Book your table now, we'll love to have you!</p>
                     <div className='home__cta-img__reservations__form__input-box'>
-                        <input className='home__cta-img__reservations__form__input-box__input' placeholder='Full name' name="name" type='text' value={name} onChange={(e) => setName(e.target.value)} onBlur={handleBlur} />
+                        <input className='home__cta-img__reservations__form__input-box__input' placeholder='Full name' required name="name" type='text' value={name} onChange={(e) => setName(e.target.value)} onBlur={handleBlur} />
                         {errors.name && touched.name && errors.name }
 
                     </div>
@@ -32,14 +32,14 @@ const ReservationForm = ({name, setName, email, setEmail, phone, setPhone, numOf
                     <div className='home__cta-img__reservations__form__input-section'>
 
                         <div className='home__cta-img__reservations__form__input-section__input-box' >
-                            <input onBlur={handleBlur} className='home__cta-img__reservations__form__input-section__input-box__input' placeholder="Email" type='email' values={email} name='email' onChange={(e) => setEmail(e.target.value)} />
+                            <input  required onBlur={handleBlur} className='home__cta-img__reservations__form__input-section__input-box__input' placeholder="Email" type='email' values={email} name='email' onChange={(e) => setEmail(e.target.value)} />
                             {errors.email && touched.email && errors.email}
 
                         </div>
 
 
                         <div className='home__cta-img__reservations__form__input-section__input-box'>
-                            <input className='home__cta-img__reservations__form__input-section__input-box__input' placeholder="Phone Number" type='tel' name='phone' values={phone} onChange={(e) => setPhone(e.target.value)} onBlur={handleBlur} />
+                            <input required className='home__cta-img__reservations__form__input-section__input-box__input' placeholder="Phone Number" type='tel' name='phone' values={phone} onChange={(e) => setPhone(e.target.value)} onBlur={handleBlur} />
                             {errors.phone && touched.phone && errors.phone}
                        
                         </div>
@@ -47,7 +47,7 @@ const ReservationForm = ({name, setName, email, setEmail, phone, setPhone, numOf
                     </div>
 
                     <div className='home__cta-img__reservations__form__input-box'>
-                        <input className='home__cta-img__reservations__form__input-box__input' placeholder="NUmber of guest" type='number'name='numOfGuest' values={numOfGuest} onChange={(e) => setNumOfGuest(e.target.value)} onBlur={handleBlur} />
+                        <input required className='home__cta-img__reservations__form__input-box__input' placeholder="NUmber of guest" type='number'name='numOfGuest' values={numOfGuest} onChange={(e) => setNumOfGuest(e.target.value)} onBlur={handleBlur} />
                         {errors.numOfGuest && touched.numOfGuest && errors.numOfGuest}
                     </div>
 
@@ -55,13 +55,15 @@ const ReservationForm = ({name, setName, email, setEmail, phone, setPhone, numOf
 
 
                         <div className='home__cta-img__reservations__form__input-section__input-box'>
-                            <input className='home__cta-img__reservations__form__input-section__input-box__input' type='date' name='date' values={date} onChange={(e) => setDate(e.target.value)} onBlur={handleBlur} />
-                            {errors.date && touched.date && errors.date ? <Alert severity="error">{errors.date && touched.date && errors.date }</Alert>:null}
+                            <input  className='home__cta-img__reservations__form__input-section__input-box__input' type='date' name='date' required min="2022-09-01" max="2022-12-30" values={date} onChange={(e) => setDate(e.target.value)} onBlur={handleBlur} />
+                            {errors.date && touched.date && errors.date}
 
                         </div>
 
                         <div className='home__cta-img__reservations__form__input-section__input-box'>
-                            <input className='home__cta-img__reservations__form__input-section__input-box__input' type='time' value={time} onChange={(e) => setTime(e.target.value)} />
+                            <input className='home__cta-img__reservations__form__input-section__input-box__input' type='time' name='time' min="12:00" max="22:00" required values={time} onChange={(e) => setTime(e.target.value)} onBlur={handleBlur} />
+                            {errors.time && touched.time && errors.time}
+
                         </div>
                     </div>
 
@@ -70,7 +72,7 @@ const ReservationForm = ({name, setName, email, setEmail, phone, setPhone, numOf
                         <textarea className='home__cta-img__reservations__form__input-box__input' placeholder="Any special request" value={specialRequest} onChange={(e) => setSpecialRequest(e.target.value)} />
                     </div>
 
-                    <button className='home__cta-img__reservations__form__input-box__btn'>Submit Reservation</button>
+                    <button className='home__cta-img__reservations__form__input-box__btn'  >Submit Reservation</button>
 
                 </>
             }

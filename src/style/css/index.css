@@ -568,6 +568,12 @@ html {
   border: solid 2px rgba(255, 255, 255, 0.5803921569);
 }
 
+.suspense-load {
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
 .suspense-load--img {
   width: 50%;
 }

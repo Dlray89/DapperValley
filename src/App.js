@@ -3,7 +3,7 @@ import Navigation from './components/navigation/navigation';
 import { Suspense, lazy } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom'
 
-const Logo = lazy(() => import('./images/desktop/logo.png'))
+import Logo from './images/desktop/logo.png'
 
 function App() {
 

@@ -84,6 +84,13 @@ const Validation = () => {
         ) {
             errors.date = <Alert severity="info">Only accept dates here!</Alert>
         }
+        if (!time){
+            errors.time = <Alert severity="error">Arrival Time is required!</Alert>
+        } else if (
+            !/([01]?[0-9]|2[0-3]):[0-5][0-9](:[0-5][0-9])?/.test(time)
+        ) {
+            errors.time = <Alert severity="info">We dont accepted reservations after 11PM</Alert>
+        }
         return errors
     }}
     onSubmit={(values, { setSubmitting}) => {
