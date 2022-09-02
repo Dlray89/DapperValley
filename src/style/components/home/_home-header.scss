@@ -1,5 +1,6 @@
 @import '../base/variables.scss';
 @import '../base/animation.scss';
+
 .home {
 
     &__home-header {
@@ -20,12 +21,12 @@
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
-            margin:0em 12.5em ;
+            margin: 0em 12.5em;
             height: 13em;
 
             &__logo-box {
-                
-                
+
+
                 text-align: center;
 
                 &:nth-child(1) {
@@ -39,13 +40,13 @@
                 &:nth-child(3) {
                     animation: bounce 1s both 3s;
                 }
-                
+
 
                 &--logo {
                     width: 2em;
 
-               
-                    
+
+
                 }
             }
 
@@ -64,10 +65,10 @@
         color: #B67429;
         transform-origin: 0 0;
         animation: $track-in-animation;
-        
+
     }
 
-    &__subheader{
+    &__subheader {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -80,13 +81,13 @@
             font-weight: 700;
         }
 
-        &__text{
+        &__text {
             width: 40%;
             text-align: center;
             margin: 0.5em 0em;
         }
 
-        &__btn{
+        &__btn {
             font-style: normal;
             padding: 0.5em 0.5em;
             width: 12%;
@@ -102,7 +103,7 @@
                 background-color: #ffffff94;
                 color: #B67429;
                 border: solid 2px #ffffff94;
-            
+
             }
 
 
@@ -153,7 +154,7 @@
                     background-color: #ffffff94;
                     color: #B67429;
                     border: solid 2px #ffffff94;
-                
+
                 }
             }
 
@@ -161,6 +162,7 @@
 
         &__img-box {
             width: 30%;
+
             &__img {
                 width: 100%;
                 border-radius: 50%;
@@ -171,12 +173,140 @@
     }
 
     &__cta-img {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.76), rgba(0, 0, 0, 0.774)), url("../../../images/desktop/resturant.jpg");
+        padding: 1em 3em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.459), rgba(0, 0, 0, 0.644)), url('../../../images/desktop/resturant.jpg');
         background-repeat: no-repeat;
         background-size: 100%;
-        height: 30em;
         background-position-y: bottom;
+        
+
+        &__reservations {
+            display: flex;
+            flex-direction: column;
+
+            &__form {
+                width: 35%;
+                margin: 0 auto;
+
+
+                &__title {
+                    color: #B67429;
+                    font-size: 2em;
+                }
+
+                &__text {
+                    color: white;
+                }
+
+
+                &__input-box {
+
+                    &__input {
+                        padding: 0.5em 0.5em;
+                        background-color: #b674298c;
+                        color: white;
+                        border: none;
+                        border-radius: 5px;
+                        margin: 0.7em 0em;
+                        text-transform: uppercase;
+                        width: 100%;
+                        box-shadow: 4px 4px 8px 1px #e9e6e379;
+
+                        &::placeholder{
+                            color: rgba(255, 255, 255, 0.795);
+                        }
+                    }
+
+                    &__btn {
+                        padding: 0.6em 0.6em;
+                        background-color: transparent;
+                        border: solid 1px #B67429;
+                        color: #B67429;
+                        text-transform: uppercase;
+                        border-radius: 5px;
+                        cursor: pointer;
+
+
+
+                        &:hover {
+                            background-color: #B67429;
+                            color: white;
+                        }
+
+                    }
+
+                  
+                }
+
+
+                &__input-section{
+                    display: flex;
+                    flex-direction: row;
+                    text-align: center;
+
+            
+                    
+
+                    &__input-box {
+                        width: 100%;
+
+
+                        &__input {
+                            padding: 0.5em 0.5em;
+                            background-color: #b674298c;
+                            color: white;
+                            border: none;
+                            margin: 0.5em 0em;
+                            text-transform: uppercase;
+                            width: 95%;
+                            box-shadow: 4px 4px 8px 1px #e9e6e379;
+                            border-radius: 5px;
+
+
     
+                            &::placeholder{
+                                color: rgba(255, 255, 255, 0.795);
+                            }
+                        }
+
+                        &__date {
+                            padding: 0.5em 0.5em;
+                            background-color: #b674298c;
+                            color: white;
+                            border: none;
+                            margin: 0.7em 0em;
+                            text-transform: uppercase;
+                            width: 100%;
+                            box-shadow: 4px 4px 8px 1px #e9e6e379;
+    
+                            &::placeholder{
+                                color: rgba(255, 255, 255, 0.795);
+                            }
+                        }
+    
+                        &__time{
+                            padding: 0.5em 0.5em;
+                            background-color: #b674298c;
+                            color: white;
+                            border: none;
+                            margin: 0.7em 0em;
+                            text-transform: uppercase;
+                            width: 100%;
+                            box-shadow: 4px 4px 8px 1px #e9e6e379;
+    
+                            &::placeholder{
+                                color: rgba(255, 255, 255, 0.795);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+
 
     }
 
@@ -231,7 +361,7 @@
                     background-color: #ffffff94;
                     color: #B67429;
                     border: solid 2px #ffffff94;
-                
+
                 }
             }
         }
