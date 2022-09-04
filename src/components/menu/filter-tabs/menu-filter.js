@@ -3,21 +3,15 @@ import React, { useEffect, useState } from "react";
 
 
 
-const FilterTabs = () => {
-    const [filter, setFilter] = useState('All')
-    const [toggle, setToggle] = useState(false)
+const FilterTabs = ({filter, setFilter, setToggle, newMenu}) => {
+  
 
 
     // useEffect(() => {
     //     window.scrollTo(0, 0)
     // })
 
-    const menuTabs = {
-        "All":() => () => true,
-        "Burgers": (item) => !item.type,
-        "Steaks": (item) => item.type
-    }
-    const newMenu = Object.keys(menuTabs);
+ 
     return (
         <div className="menu__filter-btn">
             {newMenu.map((item) => (

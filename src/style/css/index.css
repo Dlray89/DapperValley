@@ -628,6 +628,14 @@ html {
   box-shadow: 0px 4px 10px 1px black;
   cursor: pointer;
 }
+.menu__burgers {
+  padding: 0em 26em;
+  margin-bottom: 5em;
+}
+.menu__burgers__item-box__title {
+  color: #B67429;
+  margin: 0.6em 0em;
+}
 
 .menu-true {
   color: white;

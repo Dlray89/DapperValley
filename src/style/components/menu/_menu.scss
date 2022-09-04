@@ -76,6 +76,24 @@
         }
 
     }
+
+    &__burgers{
+        padding: 0em 26em;
+        margin-bottom: 5em;
+
+        &__item-box  {
+         
+
+            &__title {
+                color: #B67429;
+                margin: 0.6em 0em;
+            }
+        }
+
+    }
+
+
+
 }
 
 
